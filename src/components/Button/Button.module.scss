@@ -13,7 +13,7 @@
     user-select: none;
 
     + .wrapper {
-        margin-left: 16px;
+        margin-left: 8px;
     }
 
     &.disabled {
@@ -25,6 +25,12 @@
 .icon + .title,
 .title + .icon {
     margin-left: 8px;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
 }
 
 // Button types
