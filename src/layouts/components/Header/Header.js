@@ -57,7 +57,7 @@ const MENU_ITEM = [
 ];
 
 function Header() {
-    const currenUser = true;
+    const currentUser = true;
 
     // Handle logic
     const handleMenuChange = (menuItem) => {
@@ -107,7 +107,7 @@ function Header() {
                 <Search />
 
                 <div className={cx('actions')}>
-                    {currenUser ? (
+                    {currentUser ? (
                         <>
                             <Tippy delay={[0, 100]} content="Upload Video" placement="bottom">
                                 <button className={cx('action-btn')}>
@@ -132,8 +132,8 @@ function Header() {
                             <Button primary>Log in</Button>
                         </>
                     )}
-                    <Menu items={currenUser ? userMenu : MENU_ITEM} onChange={handleMenuChange}>
-                        {currenUser ? (
+                    <Menu items={currentUser ? userMenu : MENU_ITEM} onChange={handleMenuChange}>
+                        {currentUser ? (
                             <Image
                                 className={cx('user-avatar')}
                                 src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/5918bafc3b0cd9bbae0b1205ef097b8d~c5_100x100.jpeg?x-expires=1661047200&x-signature=QBe14LcEI534kK2gNwc%2BivuE5IU%3D"

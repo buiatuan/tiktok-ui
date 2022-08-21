@@ -15,12 +15,13 @@
     overflow: hidden;
 
     input {
+        flex: 1;
         height: 100%;
+        padding-right: 40px;
         color: var(--black);
         font-size: 1.6rem;
         font-family: var(--font-family);
         background-color: transparent;
-        flex: 1;
         caret-color: var(--primary);
 
         &:focus ~ .search {
