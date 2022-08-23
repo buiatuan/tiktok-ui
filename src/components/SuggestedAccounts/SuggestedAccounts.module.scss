@@ -1,0 +1,64 @@
+.wrapper {
+    position: relative;
+    padding-top: 16px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 8px;
+        right: 8px;
+        top: 0;
+        height: 1px;
+        background-color: #1618231f;
+    }
+}
+
+.label {
+    font-size: 1.4rem;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-info {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.nickname {
+    font-size: 1.6rem;
+}
+
+.check {
+    font-size: 1.4rem;
+    color: #20d5ec;
+    margin-left: 4px;
+}
+
+.name {
+    font-size: 1.2rem;
+    opacity: #161823bf;
+}
+
+.more-btn {
+    font-size: 1.4rem;
+    color: rgb(254, 44, 85);
+    padding: 8px;
+    margin-left: 8px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+.wrapper {
+    width: 320px;
+    padding: 20px;
+    color: #161823;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.follow-btn {
+    padding: 6px 16px;
+}
+
+.body {
+    margin-top: 12px;
+}
+
+.nickname {
+    font-size: 1.8rem;
+    font-family: SofiaPro;
+}
+
+.check {
+    font-size: 1.4rem;
+    color: #20d5ec;
+    margin-left: 6px;
+}
+
+.name {
+    font-size: 1.4rem;
+}
+
+.analytics {
+    font-size: 1.6rem;
+    margin-top: 8px;
+}
+
+.value {
+    margin-right: 6px;
+}
+
+.label {
+    color: #161823bf;
+
+    &.label:not(:last-child) {
+        margin-right: 10px;
+    }
+}
