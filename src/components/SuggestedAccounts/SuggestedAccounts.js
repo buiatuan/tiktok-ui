@@ -5,22 +5,24 @@ import styles from './SuggestedAccounts.module.scss';
 
 const cx = classNames.bind(styles);
 
-function SuggestedAccounts({ label }) {
+function SuggestedAccounts({ label, data = [], onViewChange }) {
     return (
         <div className={cx('wrapper')}>
             <p className={cx('label')}>{label}</p>
 
-            <AccountItem />
-            <AccountItem />
-            <AccountItem />
-
-            <p className={cx('more-btn')}>See all</p>
+            {data.map((account) => (
+                <AccountItem key={account.id} data={account} />
+            ))}
+            <p className={cx('more-btn')} onClick={onViewChange}>
+                See all
+            </p>
         </div>
     );
 }
 
 SuggestedAccounts.propTypes = {
     label: PropTypes.string.isRequired,
+    data: PropTypes.array,
 };
 
 export default SuggestedAccounts;

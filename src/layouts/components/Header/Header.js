@@ -138,7 +138,6 @@ function Header() {
                                 className={cx('user-avatar')}
                                 src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/5918bafc3b0cd9bbae0b1205ef097b8d~c5_100x100.jpeg?x-expires=1661047200&x-signature=QBe14LcEI534kK2gNwc%2BivuE5IU%3D"
                                 alt="anh tuan"
-                                fallback="https://avatars.githubusercontent.com/u/95300584?s=40&v=4"
                             />
                         ) : (
                             <button className={cx('more-btn')}>
